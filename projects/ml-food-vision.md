@@ -78,7 +78,7 @@ vi app.py
 --
 
 # Setup environment credentials (you'll need to change these)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "heidless-datasci-53f93322658d.json" # change for your GCP key
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "<GCP_KEY>" # change for your GCP key
 PROJECT = "heidless-datasci" # change for your GCP project
 REGION = "europe-west2" # change for your GCP region (where your model is hosted)
 
