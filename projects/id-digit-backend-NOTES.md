@@ -4,7 +4,6 @@ ACCOUNT: heidlessemail09@gmail.com
 
 Google Group Name: 'ml-d'
 
-
 # [google: cost mgmt](https://console.cloud.google.com/billing/01FE37-94F24B-C379DD/reports/cost-breakdown?hl=en)
 # [tensorflow beginner course](https://www.youtube.com/watch?v=hvgnX1gbsLA&list=PLqnslRFeH2Uqfv1Vz3DqeQfy0w20ldbaV&index=1)
 
@@ -23,7 +22,16 @@ conda env list
 #conda create --name cloud_run_3 pip python=3.9
 
 source ~/miniconda3/bin/activate idd_back
+
 conda deactivate
+
+
+docker build -t bk_end:latest
+docker run -it bk_end
+
+docker rm --force vibrant_cerf
+
+docker image rm --force bk_end
 
 <!-- 
 conda install Flask --channel conda-forge

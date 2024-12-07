@@ -9,7 +9,6 @@ Google Group Name: 'py_sl'
 # conda
 source ~/miniconda3/bin/activate ml_datasci
 
-
 ```
 
 ## [Streamlit Mini Course - Make Websites With ONLY Python](https://www.youtube.com/watch?v=o8p7uQCGD0U&t=261s)

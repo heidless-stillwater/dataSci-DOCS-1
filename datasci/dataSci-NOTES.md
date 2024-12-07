@@ -1,6 +1,7 @@
 - [environment](#environment)
 	- [Cookiecutter](#cookiecutter)
 	- [set env](#set-env)
+	- [markdown cheatsheet](#markdown-cheatsheet)
 	- [git cheatsheet](#git-cheatsheet)
 	- [conda](#conda)
 		- [conda - CHEATSHEET](#conda---cheatsheet)
@@ -32,6 +33,9 @@ source ~/miniconda3/bin/activate dataSci-2
 jupyter lab
 
 ```
+## markdown cheatsheet
+- ### [markdown](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)
+
 
 ## git cheatsheet
 ```

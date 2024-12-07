@@ -2,7 +2,8 @@
 # [Building Your First Streamlit App: A Step-by-Step Tutorial](https://medium.com/@chaitanyasirivuri/building-your-first-streamlit-app-a-step-by-step-tutorial-e058d5dfe5f4)
 
 conda deactivate
-source ~/miniconda3/bin/activate idd_front
+source ~/miniconda3/bin/activate ml_datasci
+
 
 # RUN
 ```
@@ -15,6 +16,12 @@ streamlit run app.py
 
 ## [How to deploy your Streamlit Web App to Google Cloud Run](https://medium.com/@faizififita1/how-to-deploy-your-streamlit-web-app-to-google-cloud-run-ba776487c5fe)
 
+### Generate requirements.txt
+```
+conda list -e > requirements.txt
+
+```
+
 ```
 # Dockerfile
 FROM python:3.11
@@ -26,13 +33,36 @@ ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8080", "--server.addres
 
 ```
 
+# configure Docker
+- ### [How to Conda (miniconda / anaconda) in Docker in 2022](https://mjtdev.medium.com/how-to-conda-miniconda-anaconda-in-docker-in-2022-5579cafc44fd)
+  - ### [Export and Create conda environment with yml](https://shandou.medium.com/export-and-create-conda-environment-with-yml-5de619fe5a2)
+```
+conda env export > environment.yml
+
+conda env create -f environment.yml
+
+```
+- ### [Activating a Conda environment in your Dockerfile](https://pythonspeed.com/articles/activate-conda-dockerfile/#working)
+  - ### [Docker for Development and Deployment](https://mjtdev.medium.com/how-to-conda-miniconda-anaconda-in-docker-in-2022-5579cafc44fd)
+
+```
+     # Dockerfile
+     
+     conda install conda-forge::docker
+
+     conda list -e > requirements.txt
+     conda create --name ml_datasci --file requirements.txt
+
+     ```
+
+
 # build & run container
 ```
 # Build a local docker image
-docker build -t id-digit-frontend .
+docker build -t s_app .
 
 # Run the image
-docker run -p 8080:8080 id-digit-frontend
+docker run -p 8080:8080 s_app
 
 ```
 
