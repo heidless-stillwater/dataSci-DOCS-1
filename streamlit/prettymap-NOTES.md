@@ -7,7 +7,7 @@
 export GCP_PROJECT=h-pfolio-2
 echo ${GCP_PROJECT}
 
-export APP_NAME=population-dashboard-2
+export APP_NAME=prettymapp-2
 echo ${APP_NAME}
 
 export GCP_REGION=europe-west1
@@ -19,7 +19,6 @@ gcloud builds submit \
   --timeout=2h
 
 ```
-
 ## deploy to live
 ```
 gcloud run deploy ${APP_NAME} \
@@ -30,8 +29,6 @@ gcloud run deploy ${APP_NAME} \
   --allow-unauthenticated
 
 ```
-
-
 
 ##############################################################
 # misc
@@ -44,28 +41,8 @@ Allow Unauthenticated Invocations
 
 ```
 
-#######################################################
-# DEPLOY to LIVE
-#
-```
-# google submit & deploy
-
-export GCP_PROJECT=h-pfolio-2
-echo ${GCP_PROJECT}
-
-export APP_NAME=population-dashboard-0
-echo ${APP_NAME}
-
-gcloud builds submit --tag gcr.io/${GCP_PROJECT}/${APP_NAME} --timeout=2h
-
-# build svc via google dashboard
-CloudRun->DeployContainer->Service->[container image url]
---
-Allow Unauthenticated Invocations
---
-
-```
-
+###########################################
+# population dashboard as example
 ## [Building a dashboard in Python using Streamlit](https://blog.streamlit.io/crafting-a-dashboard-app-in-python-using-streamlit/)
 - ### [git: population-dashboard](git@github.com:heidless-stillwater/population-dashboard.git)
 

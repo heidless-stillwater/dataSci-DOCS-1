@@ -15,7 +15,9 @@ source ~/miniconda3/bin/activate ml_datasci
 - [Streamlit documentation](https://docs.streamlit.io/)
 - [GIT:py-streamlit-mini](https://github.com/heidless-stillwater/py-streamlit-mini)
 ```
-streamlit run main.py
+cd src
+
+streamlit run eXemplar.py
 
 
 ```

@@ -1,20 +1,20 @@
 
-# [Building Your First Streamlit App: A Step-by-Step Tutorial](https://medium.com/@chaitanyasirivuri/building-your-first-streamlit-app-a-step-by-step-tutorial-e058d5dfe5f4)
+## [Building Your First Streamlit App: A Step-by-Step Tutorial](https://medium.com/@chaitanyasirivuri/building-your-first-streamlit-app-a-step-by-step-tutorial-e058d5dfe5f4)
 
 conda deactivate
 source ~/miniconda3/bin/activate ml_datasci
 
 
-# RUN
+## RUN
 ```
 streamlit run app.py
 
 
 ```
 
-# Google DEPLOY
+## Google DEPLOY
 
-## [How to deploy your Streamlit Web App to Google Cloud Run](https://medium.com/@faizififita1/how-to-deploy-your-streamlit-web-app-to-google-cloud-run-ba776487c5fe)
+### [How to deploy your Streamlit Web App to Google Cloud Run](https://medium.com/@faizififita1/how-to-deploy-your-streamlit-web-app-to-google-cloud-run-ba776487c5fe)
 
 ### Generate requirements.txt
 ```
